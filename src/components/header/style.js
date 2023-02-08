@@ -5,6 +5,7 @@ export const HeaderArea = styled.header`
   ${tw`
     bg-white
     py-[1.6rem]
+    shadow-[0_3px_50px_-1px_rgba(50, 50, 71, 0.05)]
    `}
 `
 

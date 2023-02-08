@@ -9,12 +9,12 @@ const Button = ({ onClick, bg, color, title, border, icon, fontSize }) => {
       color={color}
       onClick={onClick}
     >
-      {title}
       {icon && (
         <IconBox>
           <img src={icon} alt={`${title}-icon`} />
         </IconBox>
       )}
+      {title}
     </ButtonBox>
   )
 }
