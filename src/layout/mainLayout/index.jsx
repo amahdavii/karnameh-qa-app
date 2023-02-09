@@ -8,7 +8,9 @@ const MainLayout = () => {
   return (
     <LayoutArea>
       <Header title={location.pathname === "/" ? "لیست سوالات" : "جزییات سوالات"} />
-      <MainContent>{Outlet}</MainContent>
+      <MainContent>
+        <Outlet />
+      </MainContent>
     </LayoutArea>
   )
 }

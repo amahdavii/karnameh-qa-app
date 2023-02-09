@@ -18,7 +18,7 @@ const Header = ({ title }) => {
       <HeaderContainer>
         <HeaderTitle>{title}</HeaderTitle>
         <HeaderLeftSide>
-          <Button title="سوال جدید" icon={plusIcon} />
+          <Button title="سوال جدید" icon={plusIcon} fontSize="1.2rem" />
           <HeaderUserContainer>
             <HeaderUserProfilePic
               className="ml-[1.2rem]"
