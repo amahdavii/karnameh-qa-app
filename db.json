@@ -2,11 +2,12 @@
   "questions": [
     {
       "id": 1,
-      "avatar": "",
-      "title": "مشکل در Auth در React",
+      "avatar": "/avatars/profileimg.avif",
+      "title": "change title",
       "hour": "16:48",
       "date": "1400/2/15",
-      "description": "سلا من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
+      "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
+      "author": true,
       "comments": [
         {
           "id": 1,
@@ -28,11 +29,32 @@
     },
     {
       "id": 2,
-      "avatar": "",
+      "avatar": "/avatars/5.jpg",
       "title": "test",
       "hour": "16:48",
       "date": "1400/2/15",
-      "description": "سلا من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
+      "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
+      "author": true,
+      "comments": []
+    },
+    {
+      "id": 3,
+      "avatar": "/avatars/7.jpeg",
+      "title": "برنامه نویسی چیست ؟",
+      "hour": "18:31",
+      "date": "1401/2/15",
+      "description": "سلام ممنون میشم من رو در حوزه برنامه نویسی کمک کنید. باتشکر",
+      "author": true,
+      "comments": []
+    },
+    {
+      "id": 100,
+      "avatar": "/avatars/5.jpg",
+      "title": "test 752",
+      "hour": "16:48",
+      "date": "1400/2/15",
+      "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
+      "author": true,
       "comments": []
     }
   ]

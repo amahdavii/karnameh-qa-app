@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Portal from "../../hoc/portal"
 import {
   ModalContainer,
@@ -15,10 +16,24 @@ import {
 } from "./style"
 import Close from "@/assets/icons/close.svg"
 import Button from "@/components/button"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const Modal = ({ visible, hide }) => {
   const [question, setQuestion] = useState({ title: "", description: "" })
+  const time = new Date()
+  useEffect(() => {
+    console.log(`${time.getHours()}:${time.getMinutes()}`)
+  }, [])
+
+  // useEffect(() => {
+  //   axios.post("http://localhost:3004/questions", {
+  //     id: Math.floor(Math.random() * 100),
+  //     title: question.title,
+  //     // hour: `${time.getHours}:${time.getMinutes}`,
+  //     description: question.description,
+  //     comments: [],
+  //   })
+  // }, [question])
 
   const handleSubmit = (event) => {
     event.preventDefault()
