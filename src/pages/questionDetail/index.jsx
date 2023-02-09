@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useLocation } from "react-router-dom"
 import { getDetailQuestion, updateQuestion } from "@/app/question"
-import getCurrentDate from "@/lib/currentDate"
+import getCurrentDate from "../../lib/currentDate" 
 import QuestionBox from "@/components/questionBox"
 import Button from "@/components/button"
 import {

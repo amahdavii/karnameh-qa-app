@@ -17,7 +17,7 @@ import {
 import Close from "@/assets/icons/close.svg"
 import Button from "@/components/button"
 import { useState } from "react"
-import getCurrentDate from "@/lib/currentDate"
+import getCurrentDate from "../../lib/currentDate"
 import { useDispatch } from "react-redux"
 import { createNewQuestion } from "@/app/question"
 
