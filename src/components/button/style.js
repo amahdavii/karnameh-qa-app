@@ -11,6 +11,7 @@ export const ButtonBox = styled.button`
     cursor-pointer
     justify-center
     font-[600]
+    outline-none
 `}
   padding: ${(props) => props.padding ?? "1rem 1.6rem"};
   color: ${(props) => props.color ?? "#fff"};

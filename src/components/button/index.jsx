@@ -10,6 +10,7 @@ const Button = ({
   fontSize,
   padding,
   margin,
+  type = "text",
 }) => {
   return (
     <ButtonBox
@@ -20,6 +21,7 @@ const Button = ({
       padding={padding}
       onClick={onClick}
       margin={margin}
+      type={type}
     >
       {icon && (
         <IconBox>

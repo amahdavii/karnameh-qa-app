@@ -12,13 +12,18 @@ import {
   HeaderUserName,
 } from "./style"
 
-const Header = ({ title }) => {
+const Header = ({ title, modal }) => {
   return (
     <HeaderArea>
       <HeaderContainer>
         <HeaderTitle>{title}</HeaderTitle>
         <HeaderLeftSide>
-          <Button title="سوال جدید" icon={plusIcon} fontSize="1.2rem" />
+          <Button
+            onClick={modal}
+            title="سوال جدید"
+            icon={plusIcon}
+            fontSize="1.2rem"
+          />
           <HeaderUserContainer>
             <HeaderUserProfilePic
               className="ml-[1.2rem]"
