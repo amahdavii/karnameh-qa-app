@@ -30,7 +30,8 @@ export const getAllQuestion = () => async (dispatch) => {
 export const createNewQuestion = (data) => async (dispatch) => {
   try {
     const res = await createQuestionApi(data)
-    if (res.status === "201") dispatch(getAllQuestion())
+
+    if (res.status === 201) dispatch(getAllQuestion())
   } catch (e) {
     return console.error(e.message)
   }
@@ -39,7 +40,7 @@ export const createNewQuestion = (data) => async (dispatch) => {
 export const updateQuestion = (body, id) => async (dispatch) => {
   try {
     const res = await updateQuestionApi(body, id)
-    if (res.status === "200") dispatch(getAllQuestion())
+    if (res.status === 200) dispatch(getAllQuestion())
   } catch (e) {
     return console.error(e.message)
   }

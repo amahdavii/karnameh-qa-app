@@ -23,7 +23,7 @@ const QuestionListPage = () => {
           hour={item.hour}
           date={item.date}
           auther={true}
-          messageCount={item.comments.length}
+          messageCount={item.comments?.length}
         />
       ))}
     </>

@@ -16,31 +16,35 @@ import {
 } from "./style"
 import Close from "@/assets/icons/close.svg"
 import Button from "@/components/button"
-import { useState, useEffect } from "react"
+import { useState } from "react"
+import getCurrentDate from "@/lib/currentDate"
+import { useDispatch } from "react-redux"
+import { createNewQuestion } from "@/app/question"
 
 const Modal = ({ visible, hide }) => {
+  const dispatch = useDispatch()
   const [question, setQuestion] = useState({ title: "", description: "" })
-  const time = new Date()
-  useEffect(() => {
-    console.log(`${time.getHours()}:${time.getMinutes()}`)
-  }, [])
 
-  // useEffect(() => {
-  //   axios.post("http://localhost:3004/questions", {
-  //     id: Math.floor(Math.random() * 100),
-  //     title: question.title,
-  //     // hour: `${time.getHours}:${time.getMinutes}`,
-  //     description: question.description,
-  //     comments: [],
-  //   })
-  // }, [question])
+  const createQuestion = () => {
+    const time = new Date()
+    const date = getCurrentDate()
+    let body = {
+      avatar: "/avatars/profileimg.avif",
+      title: question.title,
+      hour: `${time.getHours()}:${time.getMinutes()}`,
+      date,
+      description: question.description,
+      comments: [],
+    }
+    dispatch(createNewQuestion(body))
+    hide()
+    setQuestion({ title: "", description: "" })
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    console.log("question", question)
     if (question.title && question.description) {
-      hide()
-      setQuestion({ title: "", description: "" })
+      createQuestion()
     }
   }
 

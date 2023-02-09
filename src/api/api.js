@@ -10,7 +10,7 @@ export const getQuestionListApi = () => {
 export const createQuestionApi = (body) => {
   return Request({
     method: "post",
-    body,
+    data: body,
     url: "/questions",
   })
 }
@@ -18,7 +18,7 @@ export const createQuestionApi = (body) => {
 export const updateQuestionApi = (body, id) => {
   return Request({
     method: "patch",
-    body,
+    data: body,
     url: `/questions/${id}`,
   })
 }

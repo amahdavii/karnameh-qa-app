@@ -56,6 +56,25 @@
       "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
       "author": true,
       "comments": []
+    },
+    {
+      "avatar": "/avatars/5.jpg",
+      "title": "test 752",
+      "hour": "16:48",
+      "date": "1400/2/15",
+      "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
+      "author": true,
+      "comments": [],
+      "id": 101
+    },
+    {
+      "avatar": "/avatars/profileimg.avif",
+      "title": "11111",
+      "hour": "22:56",
+      "date": "1401/11/20",
+      "description": "1111111",
+      "comments": [],
+      "id": 102
     }
   ]
 }
