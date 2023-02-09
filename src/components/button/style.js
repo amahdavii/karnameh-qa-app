@@ -10,11 +10,14 @@ export const ButtonBox = styled.button`
     items-center
     cursor-pointer
     justify-center
+    font-[600]
 `}
+  padding: ${(props) => props.padding ?? "1rem 1.6rem"};
   color: ${(props) => props.color ?? "#fff"};
   background-color: ${(props) => props.bg ?? "#27AE60"};
-  border: ${(props) => (props.border ? `.1rem solid #27AE60` : "none")};
+  border: ${(props) => props.border ?? "none"};
   font-size: ${(props) => props.fontSize ?? "1.4rem"};
+  margin: ${(props) => props.margin ?? "0"};
 `
 
 export const IconBox = styled.div`
