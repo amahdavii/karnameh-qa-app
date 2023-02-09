@@ -1,0 +1,39 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "avatar": "",
+      "title": "مشکل در Auth در React",
+      "hour": "16:48",
+      "date": "1400/2/15",
+      "description": "سلا من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
+      "comments": [
+        {
+          "id": 1,
+          "userName": "علی کیا",
+          "hour": "16:48",
+          "date": "1400/2/15",
+          "goodPoint": 20,
+          "badPoint": 10
+        },
+        {
+          "id": 2,
+          "userName": "علی کیا",
+          "hour": "16:48",
+          "date": "1400/2/15",
+          "goodPoint": 20,
+          "badPoint": 10
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "avatar": "",
+      "title": "test",
+      "hour": "16:48",
+      "date": "1400/2/15",
+      "description": "سلا من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
+      "comments": []
+    }
+  ]
+}
