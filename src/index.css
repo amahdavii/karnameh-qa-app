@@ -96,5 +96,7 @@ html {
 body {
   font-family: IRANYekanX;
   font-size: 1.6rem;
-  background: #e5e5e5;
+  line-height: 1.8;
+  background: #f7f8f9;
+  color: #222;
 }
