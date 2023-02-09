@@ -17,6 +17,7 @@ const QuestionListPage = () => {
       {questions?.map((item) => (
         <QuestionBox
           key={item.id}
+          id={item.id}
           title={item.title}
           profileImage={item.avatar}
           description={item.description}

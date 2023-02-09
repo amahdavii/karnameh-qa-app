@@ -1,3 +1,9 @@
+import { useNavigate } from "react-router-dom"
+import { useDispatch } from "react-redux"
+
+import Button from "@/components/button"
+import { updateQuestion } from "@/app/question"
+
 import {
   QuestionBoxContainer,
   QuestionBoxTitleArea,
@@ -18,8 +24,6 @@ import {
   BadPointArea,
 } from "./style"
 
-import Button from "@/components/button"
-
 import messageIcon from "@/assets/icons/Comment.svg"
 import goodPoint from "@/assets/icons/good.svg"
 import badPoint from "@/assets/icons/bad-disable.svg"
@@ -36,7 +40,37 @@ const QuestionBox = ({
   profileImage,
   goodPointCount,
   badPointCount,
+  id,
+  comments,
+  commentItem,
 }) => {
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+
+  const navigateToDetailPage = () => {
+    navigate("/detail", {
+      state: { id },
+    })
+  }
+
+  const updateComment = (comment) => {
+    let body = {
+      comments: comment,
+    }
+    dispatch(updateQuestion(body, id))
+  }
+
+  const handleGoodPoint = () => {
+    let newComment = { ...commentItem, goodPoint: commentItem.goodPoint + 1 }
+    let filterComment = comments.filter((item) => item.id !== commentItem.id)
+    updateComment([newComment, ...filterComment])
+  }
+  const handleBadPoint = () => {
+    let newComment = { ...commentItem, badPoint: commentItem.badPoint + 1 }
+    let filterComment = comments.filter((item) => item.id !== commentItem.id)
+    updateComment([newComment, ...filterComment])
+  }
+
   return (
     <QuestionBoxContainer>
       <QuestionBoxTitleArea>
@@ -83,6 +117,7 @@ const QuestionBox = ({
               border=".1rem solid #27AE60"
               padding=".8rem"
               fontSize="1.2rem"
+              onClick={navigateToDetailPage}
             />
           ) : (
             <MiddleAlignItem>
@@ -94,6 +129,7 @@ const QuestionBox = ({
                 color="#28ae5f"
                 margin="0 0 0 1.5rem"
                 fontSize="1.2rem"
+                onClick={handleGoodPoint}
               />
               <Button
                 border=".1rem solid #e3e9ec"
@@ -102,6 +138,7 @@ const QuestionBox = ({
                 icon={redBadPoint}
                 color="#F16063"
                 fontSize="1.2rem"
+                onClick={handleBadPoint}
               />
             </MiddleAlignItem>
           )}

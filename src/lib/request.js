@@ -1,11 +1,8 @@
 import axios from "axios"
-const { REACT_APP_API_ENDPOINT: baseUrl } = process.env
 
 const Request = (config) => {
-  const finalUrl = baseUrl + config.url
   axios.interceptors.request.use(
     async function (config) {
-      config.url = finalUrl
       return config
     },
     function (error) {

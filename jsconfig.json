@@ -9,7 +9,6 @@
       "@/components/*": ["./src/components/*"],
       "@/hoc": ["./src/hoc/*"],
       "@/layout/*": ["./src/layout/*"],
-      "@/lib/*": ["./src/lib/*"],
       "@/pages/*": ["./src/pages/*"],
       "@/routes/*": ["./src/routes/*"],
       "@/services/*": ["./src/services/*"]

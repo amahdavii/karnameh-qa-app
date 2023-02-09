@@ -10,71 +10,67 @@
       "author": true,
       "comments": [
         {
-          "id": 1,
+          "id": 2,
+          "avatar": "/avatars/profileimg.avif",
           "userName": "علی کیا",
-          "hour": "16:48",
-          "date": "1400/2/15",
-          "goodPoint": 20,
-          "badPoint": 10
+          "hour": "0:40",
+          "date": "1401/11/21",
+          "description": "hi",
+          "goodPoint": 25,
+          "badPoint": 25
         },
         {
-          "id": 2,
+          "id": 1,
+          "avatar": "/avatars/profileimg.avif",
           "userName": "علی کیا",
           "hour": "16:48",
           "date": "1400/2/15",
-          "goodPoint": 20,
-          "badPoint": 10
+          "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
+          "goodPoint": 24,
+          "badPoint": 35
         }
       ]
     },
     {
       "id": 2,
-      "avatar": "/avatars/5.jpg",
+      "avatar": "/avatars/profileimg.avif",
       "title": "test",
       "hour": "16:48",
       "date": "1400/2/15",
       "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
       "author": true,
-      "comments": []
+      "comments": [
+        {
+          "id": 2,
+          "avatar": "/avatars/profileimg.avif",
+          "userName": "علی کیا",
+          "hour": "1:47",
+          "date": "1401/11/21",
+          "description": "salam",
+          "goodPoint": 1,
+          "badPoint": 0
+        },
+        {
+          "id": 1,
+          "avatar": "/avatars/profileimg.avif",
+          "userName": "علی کیا",
+          "hour": "1:22",
+          "date": "1401/11/21",
+          "description": "ksldsklmks",
+          "goodPoint": 22,
+          "badPoint": 12
+        }
+      ]
     },
     {
       "id": 3,
-      "avatar": "/avatars/7.jpeg",
+      "avatar": "/avatars/profileimg.avif",
       "title": "برنامه نویسی چیست ؟",
       "hour": "18:31",
       "date": "1401/2/15",
       "description": "سلام ممنون میشم من رو در حوزه برنامه نویسی کمک کنید. باتشکر",
       "author": true,
       "comments": []
-    },
-    {
-      "id": 100,
-      "avatar": "/avatars/5.jpg",
-      "title": "test 752",
-      "hour": "16:48",
-      "date": "1400/2/15",
-      "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
-      "author": true,
-      "comments": []
-    },
-    {
-      "avatar": "/avatars/5.jpg",
-      "title": "test 752",
-      "hour": "16:48",
-      "date": "1400/2/15",
-      "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error  رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشته که ببینید دقیقا میشکلی و جود داره",
-      "author": true,
-      "comments": [],
-      "id": 101
-    },
-    {
-      "avatar": "/avatars/profileimg.avif",
-      "title": "11111",
-      "hour": "22:56",
-      "date": "1401/11/20",
-      "description": "1111111",
-      "comments": [],
-      "id": 102
     }
   ]
 }

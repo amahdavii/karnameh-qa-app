@@ -13,7 +13,7 @@ export const MainContent = styled.main`
   ${tw`
     container
     mx-auto 
-    pt-[3.2rem]
+    py-[3.2rem]
     flex-1
 `}
 `
