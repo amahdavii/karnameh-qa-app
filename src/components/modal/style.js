@@ -108,3 +108,11 @@ export const ModalLabel = styled.label`
   mb-[1rem]
   `}
 `
+
+export const ErrorMessage = styled.span`
+  ${tw`
+  text-[1.3rem] 
+  mt-3 
+  text-red-500
+`}
+`

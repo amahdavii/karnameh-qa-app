@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useLocation } from "react-router-dom"
 import { getDetailQuestion, updateQuestion } from "@/app/question"
-import getCurrentDate from "../../lib/currentDate" 
+import getCurrentDate from "../../lib/currentDate"
 import QuestionBox from "@/components/questionBox"
 import Button from "@/components/button"
 import {
@@ -11,9 +11,11 @@ import {
   ReplyTitle,
   ReplyDesription,
   ReplyQuestionTitle,
+  ErrorMessage,
 } from "./style"
 
 const QuestionDetailPage = () => {
+  const [touched, setTouched] = useState({})
   const [reply, setReply] = useState("")
   const { state } = useLocation()
   const { id } = state
@@ -45,9 +47,16 @@ const QuestionDetailPage = () => {
     setReply("")
   }
 
+  const focusHandler = (event) => {
+    setTouched({ ...touched, [event.target.name]: true })
+  }
+
   const submitHandler = (event) => {
     event.preventDefault()
-    if (reply) createComment()
+    if (reply) {
+      createComment()
+      setTouched({})
+    }
   }
 
   return (
@@ -94,8 +103,13 @@ const QuestionDetailPage = () => {
                 onChange={(e) => setReply(e.target.value)}
                 cols="30"
                 rows="6"
+                name="reply"
                 placeholder="متن پاسخ ..."
+                onFocus={focusHandler}
               />
+              {!reply && touched.reply && (
+                <ErrorMessage>پاسخ خود را وارد کنید</ErrorMessage>
+              )}
             </section>
             <Button
               type="submit"

@@ -35,3 +35,11 @@ export const ReplyQuestionTitle = styled.h2`
     mb-[1.6rem]
     `}
 `
+
+export const ErrorMessage = styled.span`
+  ${tw`
+  text-[1.3rem] 
+  mt-3 
+  text-red-500
+`}
+`
